@@ -7,7 +7,7 @@ import os
 def to_snake_case(string):
     output = ""
     for i, v in enumerate(string):
-        if v.isupper() and i < len(string) - 1:
+        if v.isupper() and i > 0:
             output += "_"
         output += v.lower()
     return output
